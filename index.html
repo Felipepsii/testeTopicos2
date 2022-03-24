@@ -8,10 +8,26 @@
 </head>  
 
 <body>
-    <p>Index</p>
 
-    <h1>a vida é com certeza uma vida</h1>
 
-    <h2>boa boa</h2>
+    <button>Botão</button>
 </body>
+
+<script>
+
+function criarParagrafo() {
+let para = document.createElement('p');
+para.textContent = 'Você clicou no botão!';
+document.body.appendChild(para);
+}
+const botoes = document.querySelectorAll('button');
+for(var i = 0; i < botoes.length ; i++) {
+ botoes[i].addEventListener('click', criarParagrafo);
+}
+
+
+</script>
+
+
+
 </html>
